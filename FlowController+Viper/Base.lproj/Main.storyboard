@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AuthViewController" customModule="FlowController_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9s-97-96Z">
+                                <rect key="frame" x="94" y="414.5" width="187.5" height="30"/>
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.74117647060000003" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Вход"/>
+                                <connections>
+                                    <action selector="tapLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAc-y3-3MD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-Bb-9cc">
+                                <rect key="frame" x="94" y="242.5" width="187.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9s-97-96Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="B8l-Il-QEE"/>
+                            <constraint firstItem="8X7-Bb-9cc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="DhP-3l-gYX"/>
+                            <constraint firstItem="c9s-97-96Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.25" id="OrX-E6-tLv"/>
+                            <constraint firstItem="8X7-Bb-9cc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="TBz-fv-KYb"/>
+                            <constraint firstItem="8X7-Bb-9cc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e2Y-6b-nsj"/>
+                            <constraint firstItem="c9s-97-96Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wFQ-Cd-SFN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="8X7-Bb-9cc" id="1Q5-St-jf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="-81"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="x9B-B7-Nbg">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Ep-uJ-WZp" customClass="MainViewController" customModule="FlowController_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w3z-wq-vT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-0d-nLN">
+                                <rect key="frame" x="94" y="387" width="187.5" height="30"/>
+                                <state key="normal" title="Second">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapSecond:" destination="0Ep-uJ-WZp" eventType="touchUpInside" id="KbF-Lt-xeN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N35-Qe-hZE">
+                                <rect key="frame" x="94" y="314" width="187.5" height="30"/>
+                                <state key="normal" title="First">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapFirst:" destination="0Ep-uJ-WZp" eventType="touchUpInside" id="9ok-6C-Kkb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37647058820000001" green="0.74117647060000003" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g9b-0d-nLN" firstAttribute="centerY" secondItem="v08-fE-P3I" secondAttribute="centerY" multiplier="1.1" id="M2o-bD-t6a"/>
+                            <constraint firstItem="N35-Qe-hZE" firstAttribute="centerY" secondItem="v08-fE-P3I" secondAttribute="centerY" multiplier="0.9" id="iQP-TL-z5L"/>
+                            <constraint firstItem="N35-Qe-hZE" firstAttribute="centerX" secondItem="v08-fE-P3I" secondAttribute="centerX" id="m3i-Pg-5n4"/>
+                            <constraint firstItem="N35-Qe-hZE" firstAttribute="width" secondItem="w3z-wq-vT7" secondAttribute="width" multiplier="0.5" id="v8A-cs-gj6"/>
+                            <constraint firstItem="g9b-0d-nLN" firstAttribute="width" secondItem="w3z-wq-vT7" secondAttribute="width" multiplier="0.5" id="wcD-Vu-pMw"/>
+                            <constraint firstItem="g9b-0d-nLN" firstAttribute="centerX" secondItem="v08-fE-P3I" secondAttribute="centerX" id="zgQ-cq-eZj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v08-fE-P3I"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="I4R-ea-vfz">
+                        <barButtonItem key="leftBarButtonItem" title="Выход" id="Tsn-Ei-52V">
+                            <connections>
+                                <action selector="Exit:" destination="0Ep-uJ-WZp" id="C8i-Za-Uc8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kai-fe-Hqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="838" y="-81"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="ROt-pZ-Bpu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2yJ-yT-AWQ" customClass="FirstViewController" customModule="FlowController_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cw8-Zb-Npn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.023529411760000001" green="0.66666666669999997" blue="0.93725490199999995" alpha="1" colorSpace="deviceRGB"/>
+                        <viewLayoutGuide key="safeArea" id="aLq-fE-dde"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="IAP-Ik-7aX"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N75-PU-4Tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-81"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="Ux0-DS-wpc">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KUo-Er-8GG" customClass="SecondViewController" customModule="FlowController_Viper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYk-zZ-ZfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.76470588240000004" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4vw-LP-aYu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="ygf-EM-iwW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8G-sA-o7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="-81"/>
+        </scene>
+    </scenes>
+</document>
